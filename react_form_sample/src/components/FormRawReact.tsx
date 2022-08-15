@@ -64,13 +64,13 @@ const Selectbox = (prop: SelectboxProp) => {
 //
 export const Form = () => {
     const fiscalYearPrep: NumberInputProp = { name: '事業年度', minDigit: 4, maxDigit: 4 }
-    const customerProp: TextInputProp = { name: '自治体名' };
+    const nameProp: TextInputProp = { name: '氏名' };
     const sportsProp: SelectboxProp = { name: '好きなスポーツ', optionList: ['boxing', 'baseball', 'basketball'] }
 
     return (
         <form action=''>
             <NumberInput name={fiscalYearPrep.name} minDigit={fiscalYearPrep.minDigit} maxDigit={fiscalYearPrep.maxDigit} />
-            <TextInput name={customerProp.name} />
+            <TextInput name={nameProp.name} />
             <Selectbox name={sportsProp.name} optionList={sportsProp.optionList} />
             <button type="submit">送信</button>
         </form>
